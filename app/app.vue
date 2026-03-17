@@ -1,7 +1,8 @@
 <script setup>
 import headerComp from './components/headerComp.vue'
 import footerComp from './components/footerComp.vue'
-import { ref, provide } from 'vue';
+import { ref, provide } from 'vue'
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -19,13 +20,12 @@ const description = 'O lar da conversa.'
 const usuario = ref({
   email: '',
   senha: ''
-});
+})
 const arrayUsuario = ref([{
   email: 'mathias',
   senha: 'araujo'
 }
-]);
-
+])
 
 provide('estado', {
   arrayUsuario,

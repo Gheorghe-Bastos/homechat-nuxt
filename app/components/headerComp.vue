@@ -27,32 +27,51 @@ const items = computed<NavigationMenuItem[]>(() => [{
 </script>
 
 <template>
-  <UHeader :toggle="{
-    color: 'primary',
-    variant: 'subtle',
-    class: 'rounded-full'
-  }">
-
+  <UHeader
+    :toggle="{
+      color: 'primary',
+      variant: 'subtle',
+      class: 'rounded-full'
+    }"
+  >
     <template #left>
       <div class="flex justify-center items-center gap-2">
-        <img class="h-17 w-17" src="/favicon.png"/>
-        <h1 id="title">Homechat</h1>
+        <img
+          class="h-17 w-17"
+          src="/favicon.png"
+        >
+        <h1 id="title">
+          Homechat
+        </h1>
       </div>
     </template>
 
-    <!--<UNavigationMenu :items="items" />-->
+    <!-- <UNavigationMenu :items="items" /> -->
 
     <template #right>
       <UColorModeButton />
 
-      <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
-        <UButton color="neutral" variant="ghost" to="https://github.com/nuxt/ui" target="_blank"
-          icon="i-simple-icons-github" aria-label="GitHub" />
+      <UTooltip
+        text="Open on GitHub"
+        :kbds="['meta', 'G']"
+      >
+        <UButton
+          color="neutral"
+          variant="ghost"
+          to="https://github.com/nuxt/ui"
+          target="_blank"
+          icon="i-simple-icons-github"
+          aria-label="GitHub"
+        />
       </UTooltip>
     </template>
 
     <template #body>
-      <UNavigationMenu :items="items" orientation="vertical" class="-mx-2.5" />
+      <UNavigationMenu
+        :items="items"
+        orientation="vertical"
+        class="-mx-2.5"
+      />
     </template>
   </UHeader>
 </template>
