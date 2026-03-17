@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+--font-sans: 'Roboto', sans-serif;
+
+}
+:root {
+    --accent: oklch(83.54% 0.1712 82.63);
+  --accent-foreground: oklch(15% 0.0300 82.63);
+  --background: oklch(12.00% 0.0096 82.63);
+  --border: oklch(28.00% 0.0096 82.63);
+  --danger: oklch(59.40% 0.2005 4.09);
+  --danger-foreground: oklch(99.11% 0 0);
+  --default: oklch(27.40% 0.0096 82.63);
+  --default-foreground: oklch(99.11% 0 0);
+  --field-background: oklch(21.03% 0.0192 82.63);
+  --field-foreground: oklch(99.11% 0.0096 82.63);
+  --field-placeholder: oklch(70.50% 0.0192 82.63);
+  --focus: oklch(83.54% 0.1712 82.63);
+  --foreground: oklch(99.11% 0.0096 82.63);
+  --muted: oklch(70.50% 0.0192 82.63);
+  --overlay: oklch(21.03% 0.0192 82.63);
+  --overlay-foreground: oklch(99.11% 0.0096 82.63);
+  --scrollbar: oklch(70.50% 0.0096 82.63);
+  --segment: oklch(39.64% 0.0096 82.63);
+  --segment-foreground: oklch(99.11% 0.0096 82.63);
+  --separator: oklch(25.00% 0.0096 82.63);
+  --success: oklch(73.29% 0.1972 130.27);
+  --success-foreground: oklch(21.03% 0.0059 130.27);
+  --surface: oklch(21.03% 0.0192 82.63);
+  --surface-foreground: oklch(99.11% 0.0096 82.63);
+  --surface-secondary: oklch(25.70% 0.0144 82.63);
+  --surface-secondary-foreground: oklch(99.11% 0.0096 82.63);
+  --surface-tertiary: oklch(27.21% 0.0144 82.63);
+  --surface-tertiary-foreground: oklch(99.11% 0.0096 82.63);
+  --warning: oklch(82.03% 0.1415 55.80);
+  --warning-foreground: oklch(21.03% 0.0059 55.80);
+}
+
+#divForm {
+  background-color: var(--surface);
+}
+
+#title {
+  font-size: 2rem;
+  color: var(--foreground);
+  font-weight: bold;
+}
+
+#hero {
+  font-size: 4.5rem;
+  color: var(--foreground);
+  font-weight: bold;
+}
+
+body {
+  background-color: var(--background);
+}
