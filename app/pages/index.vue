@@ -54,51 +54,33 @@ async function redirecionar() {
     <h1 id="hero">
       Homechat | O lar da conversa
     </h1>
-    <div
-      id="divForm"
-      class="flex items-center justify-center w-md p-5 rounded-xl"
-    >
-      <UForm
-        :validate="verificar"
-        :state="usuario"
-        class="flex flex-col space-y-4 w-full"
-        @submit="redirecionar"
-      >
-        <UFormField
-          label="Email"
-          name="email"
-          class="w-full"
-        >
-          <UInput
-            v-model="usuario.email"
-            placeholder="Digite seu email"
-            class="w-full"
-          />
+    <div id="divForm" class="flex items-center justify-center w-md p-5 rounded-xl">
+      <UForm :validate="verificar" :state="usuario" class="flex flex-col space-y-3 w-full" @submit="redirecionar">
+
+        <div class="flex flex-col gap-2 items-center">
+          <div class="flex items-center justify-center gap-2">
+            <img src="/entrar.png" class="h-10" />
+            <h2 id="subTitle">Entrar no Lar</h2>
+          </div>
+          <div class="text-sm">
+            <p>Preencha suas informações para passar pela porta do lar.</p>
+          </div>
+        </div>
+        <UFormField label="Email" name="email" class="w-full">
+          <UInput v-model="usuario.email" placeholder="Digite seu email" class="w-full" />
         </UFormField>
 
-        <UFormField
-          label="Password"
-          name="senha"
-          class="w-full"
-        >
-          <UInput
-            v-model="usuario.senha"
-            placeholder="Digite sua senha"
-            type="password"
-            class="w-full"
-          />
+        <UFormField label="Password" name="senha" class="w-full">
+          <UInput v-model="usuario.senha" placeholder="Digite sua senha" type="password" class="w-full" />
         </UFormField>
         <div class="mt-2 flex w-full">
-          <UButton
-            type="submit"
-            variant="subtle"
-            class="flex justify-center items-center w-full"
-          >
+          <UButton type="submit" variant="subtle" class="flex justify-center items-center w-full">
             Confirmar
           </UButton>
         </div>
       </UForm>
     </div>
-    <div />
+    <div>
+    </div>
   </div>
 </template>

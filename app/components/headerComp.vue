@@ -33,6 +33,7 @@ const items = computed<NavigationMenuItem[]>(() => [{
       variant: 'subtle',
       class: 'rounded-full'
     }"
+    class="w-full"
   >
     <template #left>
       <div class="flex justify-center items-center gap-2">

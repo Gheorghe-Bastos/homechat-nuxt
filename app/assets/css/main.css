@@ -5,8 +5,44 @@
 --font-sans: 'Roboto', sans-serif;
 
 }
+
 :root {
-    --accent: oklch(83.54% 0.1712 82.63);
+  /* Theme Colors (Light Mode) */
+  --accent: oklch(83.61% 0.1721 96.15);
+  --accent-foreground: oklch(15% 0.0300 96.15);
+  --background: oklch(97.02% 0.0094 96.15);
+  --border: oklch(90.00% 0.0094 96.15);
+  --danger: oklch(65.32% 0.2372 6.82);
+  --danger-foreground: oklch(99.11% 0 0);
+  --default: oklch(94.00% 0.0094 96.15);
+  --default-foreground: oklch(21.03% 0.0059 96.15);
+  --field-background: oklch(100.00% 0.0047 96.15);
+  --field-foreground: oklch(21.03% 0.0094 96.15);
+  --field-placeholder: oklch(55.17% 0.0188 96.15);
+  --focus: oklch(83.61% 0.1721 96.15);
+  --foreground: oklch(21.03% 0.0094 96.15);
+  --muted: oklch(55.17% 0.0188 96.15);
+  --overlay: oklch(100.00% 0.0028 96.15);
+  --overlay-foreground: oklch(21.03% 0.0094 96.15);
+  --scrollbar: oklch(87.10% 0.0094 96.15);
+  --segment: oklch(100.00% 0.0094 96.15);
+  --segment-foreground: oklch(21.03% 0.0094 96.15);
+  --separator: oklch(92.00% 0.0094 96.15);
+  --success: oklch(73.29% 0.1971 131.89);
+  --success-foreground: oklch(21.03% 0.0059 131.89);
+  --surface: oklch(100.00% 0.0047 96.15);
+  --surface-foreground: oklch(21.03% 0.0094 96.15);
+  --surface-secondary: oklch(95.24% 0.0075 96.15);
+  --surface-secondary-foreground: oklch(21.03% 0.0094 96.15);
+  --surface-tertiary: oklch(93.73% 0.0075 96.15);
+  --surface-tertiary-foreground: oklch(21.03% 0.0094 96.15);
+  --warning: oklch(78.19% 0.1615 53.41);
+  --warning-foreground: oklch(21.03% 0.0059 53.41);
+
+}
+
+.dark {
+  --accent: oklch(83.54% 0.1712 82.63);
   --accent-foreground: oklch(15% 0.0300 82.63);
   --background: oklch(12.00% 0.0096 82.63);
   --border: oklch(28.00% 0.0096 82.63);
@@ -48,10 +84,28 @@
   font-weight: bold;
 }
 
+#subTitle {
+  font-size: 1.7rem;
+  color: var(--foreground);
+  font-weight: bold;
+}
+
+#divFooter {
+  border-color: var(--accent-foreground);
+}
+
+#divChat {
+  background-color: var(--surface);
+}
+
 #hero {
   font-size: 4.5rem;
   color: var(--foreground);
   font-weight: bold;
+}
+
+p {
+  color: var(--field-placeholder);
 }
 
 body {

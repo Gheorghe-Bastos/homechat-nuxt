@@ -45,8 +45,8 @@ useSeoMeta({
 
 <template>
   <UApp>
-    <div class="min-h-screen flex flex-col">
-      <header>
+    <div class="min-h-screen flex flex-col items-center">
+      <header class="flex items-center w-full">
         <headerComp />
       </header>
 
